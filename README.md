@@ -12,9 +12,10 @@
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
+|username|string|null: false|
 |email|string|index: true, null: false|
 |password|string|null: false|
-|username|string|null: false|
+
 
 ### Association
 - has_many :messages
