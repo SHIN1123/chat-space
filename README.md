@@ -6,7 +6,7 @@
 |groupname|string|null: false|
 
 ### Association
-- has_many :comments
+- has_many :messages
 - has_many :users, through: :groups_users
 
 ## usersテーブル
@@ -17,7 +17,7 @@
 |username|string|null: false|
 
 ### Association
-- has_many :comments
+- has_many :messages
 - has_many :groups, through: :groups_users
 
 ## groups_usersテーブル
@@ -31,7 +31,7 @@
 - belongs_to :group
 - belongs_to :user
 
-## commentsテーブル
+## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |text|text|null: false|
