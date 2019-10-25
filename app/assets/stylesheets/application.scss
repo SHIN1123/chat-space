@@ -1,7 +1,7 @@
 @import "./reset";
 @import "font-awesome";
-@import "config/variable";
+@import "config/colors";
+@import "modules/flash";
 @import "modules/chat";
 @import "modules/chat-side";
-
-
+@import "modules/user";
