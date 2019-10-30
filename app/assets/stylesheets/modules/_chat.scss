@@ -22,6 +22,7 @@
       }
     }
     .right-header {
+      a{
       color: #38aef0;
       height: 40px;
       line-height: 40px;
@@ -30,7 +31,8 @@
       border: solid 1px #38aef0;
       position: absolute;
       right: 40px;
-      
+      text-decoration: none;
+      }
     }
   }
 
