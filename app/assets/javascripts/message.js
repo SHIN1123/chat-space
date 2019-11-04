@@ -68,6 +68,7 @@ $(function(){
         alert('自動更新出来ませんでした');
       });
     }
+    setInterval(reloadMessages, 5000);
   };
-  setInterval(reloadMessages, 5000);
+  
 });
