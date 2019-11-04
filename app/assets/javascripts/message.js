@@ -47,7 +47,7 @@ $(function(){
     })
     $("#new_message")[0].reset();
   })
-  var reloadMessages = function() {
+  var reloadMessages = setInterval(function() {
     if (location.href.match(/\/groups\/\d+\/messages/)){
       var last_message_id = $('.message').last().data('id');
       $.ajax({
@@ -67,8 +67,7 @@ $(function(){
       .fail(function() {
         alert('自動更新出来ませんでした');
       });
-    }
-    setInterval(reloadMessages, 20000);
-  };
-  
+    }else{
+      clearInterval(reloadMessages);
+    }} , 15000 )
 });
