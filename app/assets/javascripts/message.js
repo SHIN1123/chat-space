@@ -69,5 +69,5 @@ $(function(){
       });
     }else{
       clearInterval(reloadMessages);
-    }} , 15000 )
+    }} , 10000 )
 });
